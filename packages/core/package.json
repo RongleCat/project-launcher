@@ -1,0 +1,12 @@
+{
+  "name": "project-launcher-core",
+  "version": "2.0.0",
+  "description": "Git项目启动器核心模块",
+  "main": "src/index.ts",
+  "type": "module",
+  "author": "Ronglecat <ronglecat@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "path-browserify": "^1.0.1"
+  }
+}

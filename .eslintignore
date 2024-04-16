@@ -1,0 +1,8 @@
+dist
+*.nvue
+.eslintrc.js
+
+src/components/other/cl-cardDel.js
+frontend/src/views/test_result/component
+frontend/public
+backend

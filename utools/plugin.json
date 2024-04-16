@@ -1,0 +1,28 @@
+{
+  "logo": "logo.png",
+  "preload": "preload.js",
+  "name": "project-launcher",
+  "version": "2.0.0",
+  "pluginName": "project-launcher",
+  "description": "项目启动器，快速开启你的项目",
+  "author": "花喵电台",
+  "homepage": "https://www.fmcat.top",
+  "features": [
+    {
+      "code": "setting",
+      "explain": "插件模板主界面",
+      "cmds": [
+        "setting",
+        "设置"
+      ]
+    },
+    {
+      "code": "open",
+      "explain": "打开项目",
+      "cmds": [
+        "open",
+        "vscode"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "git.ignoreLimitWarning": true,
+  "html.validate.scripts": false,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": false,
+  "cSpell.words": [
+    "applescript",
+    "xcodeproj"
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  }
+}
