@@ -5,13 +5,15 @@
   "author": "RongleCat",
   "description": "Git 启动器 2.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && copy /Y .\\plugin.json .\\dist\\plugin.json",
-    "preview": "vite preview"
+    "dev": "pnpm copy-plugin && vite",
+    "build": " pnpm copy-plugin && vite build ",
+    "preview": "vite preview",
+    "copy-plugin": "if not exist dist mkdir dist && copy /Y .\\plugin.json .\\dist\\plugin.json"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.55.1",
     "@qc2168/vite-plugin-utools": "^1.3.1",
+    "leafer-draw": "1.0.0-rc.21",
     "pinia": "^2.1.7",
     "project-launcher-core": "workspace:*",
     "vue": "^3.4",

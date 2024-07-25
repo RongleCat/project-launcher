@@ -1,12 +1,12 @@
 <template>
   <div class="page-container">
-    <a-card title="工作区设置">
+    <a-card title="工作区设置1111">
       <template #extra>
-        <a-button type="primary">
+        <a-button type="primary" @click="onAdd">
           <template #icon>
             <icon-plus />
           </template>
-          添加
+          添加222
         </a-button>
       </template>
       <div class="desc-box">工具将在您配置的工作区目录搜索 <span class="highlight">Git/Svn/Mercurial</span> 项目，可添加多个工作区。</div>
@@ -27,7 +27,7 @@
     </a-card>
     <a-card title="排除关键字">
       <template #extra>
-        <a-button type="primary">
+        <a-button type="primary" @click="onAdd">
           <template #icon>
             <icon-plus />
           </template>
@@ -57,6 +57,10 @@ import { IconPlus, IconDelete } from '@arco-design/web-vue/es/icon'
 
 const workspaces = ref<string[]>(['/Users/xxx/workspace/project1'])
 const ignoreFileNames = ref<string[]>(['node_modules'])
+
+function onAdd() {
+  utools.showNotification('功能暂未实现')
+}
 </script>
 
 <style lang="scss" scoped>

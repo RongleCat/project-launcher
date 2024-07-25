@@ -9,5 +9,10 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      window.onmessage = (utools) => {
+        window.utools = utools
+      }
+    </script>
   </body>
 </html>

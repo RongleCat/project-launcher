@@ -23,6 +23,7 @@ export type MatchRule = {
   name: string
   rule: string
   icon: string
+  weight?: number
   details?: MatchRuleDetails
 }
 

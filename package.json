@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --filter project-launcher-utools dev"
+    "dev": "pnpm --filter project-launcher-utools dev",
+    "build": "pnpm --filter project-launcher-utools build"
   },
   "keywords": [],
   "author": "",

@@ -2,20 +2,18 @@
   <div class="page-container common-list-card">
     <a-card>
       <template #title>
-        <a-input :style="{ width: '320px' }" placeholder="输入启动器信息筛选" allow-clear />
+        <a-input :style="{ width: '320px' }" placeholder="输入匹配规则信息筛选" allow-clear />
       </template>
       <template #extra>
-        <div class="btn-group">
-          <a-button type="primary">
-            <template #icon>
-              <icon-close />
-            </template>
-            添加
-          </a-button>
-        </div>
+        <a-button type="primary">
+          <template #icon>
+            <icon-close />
+          </template>
+          添加
+        </a-button>
       </template>
       <a-list class="list-demo-action-layout" :bordered="false" :data="projectList" max-height="100%">
-        <template #item="{ item }: { item: Launcher }">
+        <template #item="{ item }: { item: MatchRule }">
           <a-list-item class="list-demo-item" action-layout="vertical">
             <template #extra>
               <div class="btn-group">
@@ -31,7 +29,7 @@
                 </a-button>
               </div>
             </template>
-            <a-list-item-meta :title="`${item.name} (${item.isCommand ? '自定义命令' : '应用打开'})`" :description="item.path" />
+            <a-list-item-meta :title="item.name" :description="item.rule" />
           </a-list-item>
         </template>
       </a-list>
@@ -41,22 +39,14 @@
 
 <script setup lang="ts">
 import { IconDelete, IconClose, IconEdit } from '@arco-design/web-vue/es/icon'
-import { Launcher } from 'project-launcher-core'
+import { MatchRule } from 'project-launcher-core'
 
-const projectList = ref<Launcher[]>([
+const projectList = ref<MatchRule[]>([
   {
     id: '10',
-    name: 'vscode',
-    path: 'E:\\self\\tools\\cheetah-for-utools',
-    command: '',
-    isCommand: false
-  },
-  {
-    id: '10',
-    name: 'vscode',
-    path: 'E:\\self\\tools\\cheetah-for-utools',
-    command: '',
-    isCommand: true
+    name: 'vue',
+    icon: './images/type/javascript.png',
+    rule: '+package.json(+vue,-react) -node_modules'
   }
 ])
 </script>

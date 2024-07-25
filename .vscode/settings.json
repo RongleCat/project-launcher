@@ -5,6 +5,7 @@
   "prettier.singleQuote": false,
   "cSpell.words": [
     "applescript",
+    "leafer",
     "xcodeproj"
   ],
   "[typescript]": {

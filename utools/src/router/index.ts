@@ -21,7 +21,7 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/launchers',
     meta: {
-      title: '启动器管理',
+      title: '启动器',
       icon: IconApps
     },
     component: () => import('@/views/launchers.vue')
@@ -29,10 +29,18 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/project-types',
     meta: {
-      title: '项目类型管理',
+      title: '项目类型',
       icon: IconMindMapping
     },
     component: () => import('@/views/project-types.vue')
+  },
+  {
+    path: '/match-rules',
+    meta: {
+      title: '匹配规则',
+      icon: IconMindMapping
+    },
+    component: () => import('@/views/match-rules.vue')
   }
 ]
 

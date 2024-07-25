@@ -43,6 +43,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "libs/**/*.ts",
     "*.d.ts",
     "utools/**/*.ts",
     "index.d.ts"
