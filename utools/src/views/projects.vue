@@ -31,7 +31,7 @@
                 <span><icon-branch />{{ item.versionCtrl }}</span>
               </a-tooltip>
               <a-tooltip content="启动器，点击可更改">
-                <span>
+                <span class="launcher-select">
                   <icon-common />
                   <a-select default-value="无" size="mini" placeholder="无">
                     <a-option>Beijing</a-option>
@@ -185,6 +185,22 @@ function onHitChangeSave() {
 
     &:hover {
       box-shadow: 0 0 0 2px #1890ff;
+    }
+  }
+
+  .launcher-select {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    ::v-deep(.arco-select) {
+      width: 100px;
     }
   }
 }

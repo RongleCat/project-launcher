@@ -6,7 +6,7 @@
           <template #icon>
             <icon-plus />
           </template>
-          添加222
+          添加
         </a-button>
       </template>
       <div class="desc-box">工具将在您配置的工作区目录搜索 <span class="highlight">Git/Svn/Mercurial</span> 项目，可添加多个工作区。</div>

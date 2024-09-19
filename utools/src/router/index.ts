@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import { IconSettings, IconFolder, IconApps, IconMindMapping } from '@arco-design/web-vue/es/icon'
+import { IconSettings, IconFolder, IconApps, IconMindMapping, IconCodeBlock } from '@arco-design/web-vue/es/icon'
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -38,7 +38,7 @@ export const routes: RouteRecordRaw[] = [
     path: '/match-rules',
     meta: {
       title: '匹配规则',
-      icon: IconMindMapping
+      icon: IconCodeBlock
     },
     component: () => import('@/views/match-rules.vue')
   }
