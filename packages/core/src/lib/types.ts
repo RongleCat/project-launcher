@@ -62,6 +62,7 @@ export type Project = {
   name: string
   path: string
   type: string
+  fixType?: boolean // 是否手动配置过类型
   hits: number
   isCustom?: boolean
   versionCtrl?: VersionCtrlType
@@ -87,6 +88,9 @@ export type Config = {
   projectTypeCache: ProjectTypeItem[]
   projectCache: Project[]
   ignoreFileNames: string[]
-  customProjectFolders: string[]
-  launcher: Launcher[]
+  customProject: Project[]
+  launchers: Launcher[]
+  matchRules: MatchRule[]
 }
+
+export type ExportConfig = Pick<Config, 'launchers' | 'ignoreFileNames' | 'customProject' | 'matchRules'>

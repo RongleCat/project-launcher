@@ -8,7 +8,7 @@
     "dev": "pnpm copy-plugin && vite",
     "build": " pnpm copy-plugin && vite build ",
     "preview": "vite preview",
-    "copy-plugin": "if not exist dist mkdir dist && copy /Y .\\plugin.json .\\dist\\plugin.json"
+    "copy-plugin": "node scripts/copy.js"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.55.1",
@@ -23,7 +23,7 @@
     "@types/node": "^20.10.1",
     "@vitejs/plugin-vue": "^4.5.0",
     "sass": "^1.71.0",
-    "sass-loader": "^14.1.0",
+    "sass-loader": "^16.0.2",
     "typescript": "^5.3.2",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
